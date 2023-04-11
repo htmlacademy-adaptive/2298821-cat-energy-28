@@ -52,28 +52,24 @@
     <main class="form-container">
       <section class="form">
         <h1 class="form__title main-headline">Подбор программы</h1>
-        <p class="form__description"> Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
+        <p class="form__description">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
         <form>
-          <fieldset class="form__pet-info pet">
-            <div class="pet__name-field">
+
+          <fieldset class="form__pet-info">
+            <div class="form__info form__info--name">
               <label for="pet-name">ИМЯ:*</label>
-              <div class="input-container">
-                <input class="name-input" type="text" name="name" value="БАРСИК" placeholder="Укажите имя питомца" id="pet-name" required>
-              </div>
+              <input class="name-input" type="text" name="name" value="БАРСИК" placeholder="Укажите имя питомца" id="pet-name" required>
             </div>
-            <div class="pet__weight-field">
+            <div class="form__info form__info--weight">
               <label for="pet-weight">Вес (кг):*</label>
-              <div class="input-container">
-                <input class="weight-input" type="text" name="weight" value="7" placeholder="Укажите вес питомца" id="pet-weight" required>
-              </div>
+              <input class="weight-input" type="text" name="weight" value="7" placeholder="Укажите вес питомца" id="pet-weight" required>
             </div>
-            <div class="pet__age-field">
+            <div class="form__info form__info--age">
               <label for="pet-age">Возраст (лет):</label>
-              <div class="input-container">
-                <input class="age-input" type="text" name="age" value="7" placeholder="Укажите возраст питомца" id="pet-age" required>
-              </div>
+              <input class="age-input" type="text" name="age" value="7" placeholder="Укажите возраст питомца" id="pet-age" required>
             </div>
           </fieldset>
+
           <fieldset class="form__filter form__filter--weight">
             <ul class="form__filter-list">
               <li class="form__filter-item">
@@ -99,25 +95,24 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__contacts owner">
+
+          <fieldset class="form__owner-contacts">
             <legend class="form__section-title">Контактные данные<br>(владельца кота)</legend>
-            <div class="owner__email-field">
+            <div class="form__info form__info--owner-email">
               <label for="email">E-mail:*</label>
-              <div class="input-container">
-                <input class="email-input" type="text" name="email" value="kuklachev@gmail.com" placeholder="Укажите свой электронный адрес" id="email" required>
-              </div>
+              <input class="email-input" type="text" name="email" value="kuklachev@gmail.com" placeholder="Укажите свой электронный адрес" id="email" required>
             </div>
-            <div class="owner__number-field">
+            <div class="form__info form__info--owner-number">
               <label for="number">Телефон:*</label>
-              <div class="input-container">
-                <input class="numper-input" type="text" name="phonenumber" value="8 (960) 900-60-90" placeholder="Укажите ваш номер телефона" id="number" required>
-              </div>
+              <input class="numper-input" type="text" name="phonenumber" value="8 (960) 900-60-90" placeholder="Укажите ваш номер телефона" id="number" required>
             </div>
           </fieldset>
+
           <fieldset class="form__pet-details">
             <legend class="form__section-title">Комментарий</legend>
             <textarea class="form__comment-area comment-area" name="comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
+
           <fieldset class="form__filter form__filter--additional-products">
             <legend class="form__section-title">Дополнительно</legend>
             <ul class="form__filter-list">
@@ -151,6 +146,7 @@
               </li>
             </ul>
           </fieldset>
+
           <button class="form__button button-primary" type="submit">отправить заявку</button>
         </form>
         <p class="form__field-requirement">* — Обязательные поля</p>
