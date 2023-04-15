@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Cat Energy</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="logo-icon" href="#">
+      <a class="main-header__logo-icon logo-icon" href="#">
         <svg class="logo-icon-image" width="34" height="38" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_37030_313)">
             <path d="M6.07 20.72V18.46C12.7536 17.5423 19.4937 17.0979 26.24 17.13C26.24 17.73 26.24 18.34 26.18 18.95C28.0976 18.099 30.1128 17.4877 32.18 17.13C30.8625 13.722 28.4618 10.8412 25.3471 8.93087C22.2325 7.02052 18.5764 6.1864 14.9414 6.55683C11.3064 6.92727 7.89379 8.48172 5.22852 10.9811C2.56325 13.4804 0.792971 16.7863 0.190002 20.39L6.07 20.72Z" fill="#FDC305"/>
@@ -27,10 +28,10 @@
           </defs>
         </svg>
       </a>
-      <a class="logo-text" href="#">
+      <a class="main-header__logo-text logo-text" href="#">
         <img class="logo-text-image" src="/source/img/logo-text.svg" width="101" height="18" alt="Cat Energy">
       </a>
-      <nav class="main-nav">
+      <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -54,8 +55,7 @@
         <h1 class="form__title main-headline">Подбор программы</h1>
         <p class="form__description">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
         <form>
-
-          <fieldset class="form__pet-info">
+          <div class="form__pet-info">
             <div class="form__info form__info--name">
               <label for="pet-name">ИМЯ:*</label>
               <input class="name-input" type="text" name="name" value="БАРСИК" placeholder="Укажите имя питомца" id="pet-name" required>
@@ -68,36 +68,36 @@
               <label for="pet-age">Возраст (лет):</label>
               <input class="age-input" type="text" name="age" value="7" placeholder="Укажите возраст питомца" id="pet-age" required>
             </div>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__filter form__filter--weight">
+          <div class="form__filter form__filter--weight">
             <ul class="form__filter-list">
               <li class="form__filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="filter-group" value="weight-loss" checked>
                 </label>
                 <span class="control-mark"></span>
-                <span class="control-label">Похудение</span>
+                <span class="control-label radio-btn-label">Похудение</span>
               </li>
               <li class="form__filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="filter-group" value="weight-gain" checked>
                 </label>
                 <span class="control-mark"></span>
-                <span class="control-label">Набор массы</span>
+                <span class="control-label radio-btn-label">Набор массы</span>
               </li>
               <li class="form__filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="filter-group" value="need-advice">
                 </label>
                 <span class="control-mark"></span>
-                <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                <span class="control-label radio-btn-label">Не знаю (Нужен ваш совет)</span>
               </li>
             </ul>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__owner-contacts">
-            <legend class="form__section-title">Контактные данные<br>(владельца кота)</legend>
+          <div class="form__owner-contacts">
+            <h2 class="form__section-title form__owner-contacts-title">Контактные данные<br>(владельца кота)</h2>
             <div class="form__info form__info--owner-email">
               <label for="email">E-mail:*</label>
               <input class="email-input" type="text" name="email" value="kuklachev@gmail.com" placeholder="Укажите свой электронный адрес" id="email" required>
@@ -106,47 +106,46 @@
               <label for="number">Телефон:*</label>
               <input class="numper-input" type="text" name="phonenumber" value="8 (960) 900-60-90" placeholder="Укажите ваш номер телефона" id="number" required>
             </div>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__pet-details">
-            <legend class="form__section-title">Комментарий</legend>
+          <div class="form__pet-details">
+            <h2 class="form__section-title form__pet-details-title">Комментарий</h2>
             <textarea class="form__comment-area comment-area" name="comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__filter form__filter--additional-products">
-            <legend class="form__section-title">Дополнительно</legend>
+          <div class="form__filter form__filter--additional-products">
+            <h2 class="form__section-title form__filter-add-products-title">Дополнительно</h2>
             <ul class="form__filter-list">
               <li class="form__filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="filter-group" value="sweetener" checked>
                 </label>
                 <span class="control-mark"></span>
-                <span class="control-label">сахарозаменитель</span>
+                <span class="control-label checkbox-btn-label">сахарозаменитель</span>
               </li>
               <li class="form__filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="filter-group" value="water">
                 </label>
                 <span class="control-mark"></span>
-                <span class="control-label">питьевая вода</span>
+                <span class="control-label checkbox-btn-label">питьевая вода</span>
               </li>
               <li class="form__filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="filter-group" value="milk">
                 </label>
                 <span class="control-mark"></span>
-                <span class="control-label">молоко</span>
+                <span class="control-label checkbox-btn-label">молоко</span>
               </li>
               <li class="form__filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="filter-group" value="vitamins">
                 </label>
                 <span class="control-mark"></span>
-                <span class="control-label">витамины</span>
+                <span class="control-label checkbox-btn-label">витамины</span>
               </li>
             </ul>
-          </fieldset>
-
+          </div>
           <button class="form__button button-primary" type="submit">отправить заявку</button>
         </form>
         <p class="form__field-requirement">* — Обязательные поля</p>
