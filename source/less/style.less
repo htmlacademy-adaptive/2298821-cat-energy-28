@@ -1,4 +1,8 @@
 // Начните писать стили здесь
+@import url("./blocks/fonts.less");
+@import url("./blocks/general.less");
+@import url("./blocks/general-styles.less");
+@import url("./blocks/mixins.less");
 @import url("./blocks/main-header.less");
 @import url("./blocks/programs.less");
 @import url("./blocks/advantages.less");
@@ -9,38 +13,10 @@
 @import url("./blocks/gift.less");
 @import url("./blocks/main-footer.less");
 @import url("./blocks/form.less");
-@import url("./blocks/buttons.less");
-
-body {
-  background: rgba(255, 255, 255, 1);
-  margin: 0 auto;
-  padding: 0;
-}
-
-@font-face {
-  font-family: "Lato";
-  src: local("Lato"), url("../fonts/lato/Lato-Regular.woff"), url("../fonts/lato/Lato-Regular.woff2");
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: local("Oswald"), url("../fonts/oswald/oswaldmedium.woff"), url("../fonts/oswald/oswaldmedium.woff2");
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: local("Oswald"), url("../fonts/oswald/oswaldregular.woff"), url("../fonts/oswald/oswaldregular.woff2");
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import url("./blocks/button-primary.less");
+@import url("./blocks/button-secondary.less");
+@import url("./blocks/social.less");
+@import url("./blocks/control-label.less");
+@import url("./blocks/radio-btn.less");
+@import url("./blocks/checkbox-btn.less");
+@import url("./blocks/site-list.less");
