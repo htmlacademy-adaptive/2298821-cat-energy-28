@@ -1,47 +1,39 @@
 .gift__container {
-  background-color: rgba(104, 183, 56, 1);
+  background-color: #68b738;
   background-image: url("../../img/catalog-gift-background.png");
   width: 280px;
   height: 290px;
   margin: 54px 20px 35px 20px;
 }
-
 .gift__icon {
   padding: 59px 101px 0 101px;
 }
-
 .gift__description {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
-
+  color: #ffffff;
   margin: 0;
   padding: 48px 61px 43px 58px;
 }
-
 @media (min-width: 769px) {
   .gift__container {
     width: 707px;
     height: 200px;
     margin: 69px 31px 76px 31px;
-
     display: flex;
     flex-direction: row;
   }
-
   .gift__icon {
     padding: 57px 265px 60.43px 77px;
   }
-
   .gift__description {
     margin: 0;
     padding: 71px 124px 69px 0;
   }
 }
-
 @media (min-width: 1440px) {
   .addition-wrap-desktop {
     display: flex;
@@ -49,20 +41,16 @@
     align-items: center;
     justify-content: space-between;
   }
-
   .gift__container {
     width: 245px;
     height: 289px;
-
     display: flex;
     flex-direction: column;
     margin: 176px 110px 86px 79px;
   }
-
   .gift__icon {
     padding: 56px 81px 46.41px 84px;
   }
-
   .gift__description {
     margin: 0;
     padding: 0 43px 42px 41px;

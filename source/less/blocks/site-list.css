@@ -1,8 +1,7 @@
 .site-list a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
-
 .site-list__item {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -10,38 +9,31 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
-
 @media (min-width: 769px) {
   .site-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .site-list__item {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-
     margin-right: 33px;
   }
-
 }
-
 @media (min-width: 1440px) {
   .site-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .site-list__item {
     font-weight: 400;
     font-size: 18px;
     line-height: 29.64px;
-
     margin-right: 33px;
   }
 }

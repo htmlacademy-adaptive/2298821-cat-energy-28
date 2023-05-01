@@ -4,29 +4,23 @@
   font-size: 24px;
   line-height: 24px;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
-
+  color: #000000;
   padding: 25px 74px 49px 20px;
   margin: 0;
 }
-
 .additional-products__list {
   list-style-type: none;
   padding: 0 20px;
   margin: 0;
-
   display: flex;
   flex-direction: column;
 }
-
 .additional-products__item {
   margin-bottom: 31px;
 }
-
 .additional-products__item:last-child {
   margin-bottom: 0;
 }
-
 .additional-products__item-title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -34,153 +28,122 @@
   line-height: 16px;
   text-align: left;
   text-transform: uppercase;
-  color: rgba(34, 34, 34, 1);
-
+  color: #222222;
   margin: 0;
 }
-
 .additional-products__item-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   margin-bottom: 15px;
 }
-
 .additional-products__item-description {
-  color: rgba(68, 68, 68, 1);
-
+  color: #444444;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
 }
-
 .additional-products__button {
   width: 280px;
   height: 40px;
   border: 0;
-
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-
   text-align: center;
 }
-
 @media (min-width: 769px) {
   .additional-products__title {
     margin: 0;
     padding: 68px 0 80px 67px;
   }
-
   .additional-products__list {
     width: 632px;
     margin: 0 auto;
     padding: 26px 38px;
   }
-
   .additional-products__item {
     margin-bottom: 54px;
   }
-
   .additional-products__item-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .additional-products__item-wrap__desktop {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
     margin-bottom: 23px;
   }
-
   .additional-products__item-title {
     margin-right: 244px;
   }
-
   .additional-products__item-details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     margin: 0;
   }
-
   .additional-products__item-description {
     margin: 0;
   }
-
   .amount-description {
     margin-right: 49px;
   }
-
   .additional-products__button {
     width: 632px;
     border: 0;
   }
 }
-
 @media (min-width: 1440px) {
   .additional-products__title {
     margin: 0;
     padding: 76px 0 81px 110px;
   }
-
   .additional-products__list {
     width: 896px;
     margin: 0 auto 86px 110px;
     padding: 0;
   }
-
   .additional-products__item {
     margin-bottom: 42px;
   }
-
   .additional-products__item-wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-
   .additional-products__item-wrap__desktop {
     margin-bottom: 0;
   }
-
   .additional-products__item-title {
     margin-right: 0;
   }
-
   .amount-description--sweetener {
     width: 131px;
     margin-left: 164px;
     margin-right: 112px;
   }
-
   .amount-description--water {
     width: 66px;
     margin-left: 195px;
     margin-right: 178px;
   }
-
   .amount-description--milk {
     width: 49px;
     margin-left: 245px;
     margin-right: 190px;
   }
-
   .amount-description--vitamins {
     width: 122px;
     margin-left: 230px;
     margin-right: 115px;
   }
-
   .additional-products__button {
     width: 244px;
     border: 0;

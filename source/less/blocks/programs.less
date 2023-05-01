@@ -11,12 +11,16 @@
 .programs__headline {
   color: rgba(255, 255, 255, 1);
   text-align: center;
-  text-transform: uppercase;
 
   .main-headline();
 }
 
 .programs__slogan {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -28,7 +32,10 @@
 
 .programs__item {
   background-color: rgba(217, 217, 217, 1);
-  margin: 20px;
+
+  min-width: 260px;
+  min-height: 246px;
+  margin: 20px 0;
 }
 
 .programs__item:last-child {
@@ -55,4 +62,42 @@
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
   margin: 38px 122px 18px 19px;
+}
+
+@media (min-width: 769px) {
+  .programs {
+    padding: 0 30px;
+  }
+
+  .programs__headline {
+    color: rgba(0, 0, 0, 1);
+    .main-headline();
+  }
+
+  .programs__slogan {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .programs__item {
+    min-width: 708px;
+    min-height: 372px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .programs {
+    padding: 0 110px;
+  }
+
+  .programs__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    min-width: 570px;
+    min-height: 374px;
+    margin: 0;
+  }
 }

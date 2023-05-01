@@ -1,5 +1,6 @@
 .form__title {
-  margin: 27px 41px 37px 20px;
+  padding: 27px 0 37px 20px;
+  margin: 0;
   color: rgba(0, 0, 0, 1);
 
   .main-headline();
@@ -13,7 +14,8 @@
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
 
-  margin: 0 74px 39px 20px;
+  padding: 0 74px 39px 20px;
+  margin: 0;
 }
 
 .form__info {
@@ -36,12 +38,8 @@
   padding: 0;
 }
 
-.form__filter {
-  margin: 0 20px;
-  padding: 0;
-}
-
 .form__filter-item {
+  text-transform: uppercase;
   margin-bottom: 13px;
 }
 
@@ -50,13 +48,13 @@
 }
 
 .form__filter--weight {
-  margin-top: 46px;
-  margin-bottom: 19px;
+  margin: 46px 24.29px 45px 20px;
 }
 
 .form__filter-list {
   list-style-type: none;
-  padding-left: 20px;
+  margin: 0;
+  padding: 0 20px 34px 20px;
 }
 
 .form__section-title {
@@ -68,7 +66,8 @@
 }
 
 .form__owner-contacts-title {
-  margin: 26px 0 35px 20px;
+  padding: 26px 113px 35px 20px;
+  margin: 0;
 }
 
 .form__info--owner-email {
@@ -82,26 +81,45 @@
 }
 
 .form__pet-details-title {
-  margin: 24px 0 38px 20px;
+  padding: 24px 0 38px 20px;
+  margin: 0;
 }
 
 .form__comment-area {
   margin-left: 20px;
   margin-right: 20px;
+  padding: 9.27px 12px 0 15px;
+
+  width: 253px;
+  height: 150.52px;
 
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: rgba(68, 68, 68, 1);
+
+  text-transform: uppercase;
 }
 
 .form__filter-add-products-title {
-  margin: 23px 0 34px 20px;
+  padding: 23px 0 34px 20px;
+  margin: 0;
 }
 
 .form__button {
-  margin-top: 34px 20px 21px 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  width: 280px;
+  height: 40px;
+
+  padding: 0;
+  border: 0;
+
+  margin: 0 20px 21px 20px;
 }
 
 .form__field-requirement {
@@ -111,5 +129,316 @@
   line-height: 16px;
   color: rgba(0, 0, 0, 1);
 
-  margin: 0 84px 0 84px;
+  padding-bottom: 32px;
+  padding-left: 84px;
+  margin: 0;
+}
+
+@media (min-width: 769px) {
+  .form__title {
+    padding: 65px 0 54px 69px;
+  }
+
+  .form__description {
+    padding: 0 0 66px 70px;
+    line-height: 30px;
+  }
+
+  .form__pet-info {
+    width: 630px;
+    margin: 0 67px 72px 71px;
+  }
+
+  .form__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    font-size: 20px;
+  }
+
+  .name-input {
+    width: 570px;
+    height: 52px;
+    margin-left: 13px;
+  }
+
+  .weight-input {
+    width: 542px;
+    height: 52px;
+    margin-left: 13px;
+  }
+
+  .age-input {
+    width: 500px;
+    height: 52px;
+    margin-left: 13px;
+  }
+
+  .form__filter--weight {
+    margin: 0 69px 71px 71px;
+    padding: 25px 0 25px 27.93px;
+    border: 1px solid rgba(231, 231, 231, 1);
+  }
+
+  .form__filter-list {
+    padding: 0;
+  }
+
+  .form__owner-contacts-title {
+    padding: 0 0 76px 69px;
+    font-size: 36px;
+  }
+
+  .form__info--owner-email {
+    margin-left: 66px;
+    margin-right: 71px;
+  }
+
+  .form__info--owner-number {
+    margin-left: 66px;
+    margin-right: 71px;
+  }
+
+  .email {
+    width: 63px;
+  }
+
+  .email-input {
+    width: 548px;
+    height: 52px;
+    margin-left: 20px;
+  }
+
+  .numper-input {
+    width: 529px;
+    height: 52px;
+    margin-left: 20px;
+  }
+
+  .form__pet-details-title {
+    padding: 65px 0 76px 69px;
+  }
+
+  .form__comment-area {
+    margin-left: 70px;
+    margin-right: 67px;
+    padding: 10px 0 0 19px;
+
+    width: 631px;
+    min-height: 174px;
+  }
+
+  .form__filter-add-products-title {
+    padding: 65px 0 57px 70px;
+  }
+
+  .form__filter-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 533px;
+    margin-left: 70px;
+    margin-bottom: 54px;
+  }
+
+  .form__filter-item-wrap {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 32px;
+  }
+
+  .form__filter-item-wrap:last-child {
+    margin-bottom: 0;
+  }
+
+  .form__filter-item {
+    margin: 0;
+  }
+
+  .form__filter-item--sweetener {
+    margin-right: 123px;
+  }
+
+  .form__filter-item--milk {
+    margin-right: 216px;
+  }
+
+  .form__summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form__button {
+    width: 282px;
+    height: 52px;
+
+    padding: 0;
+    border: 0;
+    margin: 0 64px 72px 71px;
+  }
+
+  .form__field-requirement {
+    padding: 0;
+    margin: 0 177px 93px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form__title {
+    padding: 73.52px 0 56px 110px;
+  }
+
+  .form__description {
+    padding: 0 0 66px 110px;
+    line-height: 30px;
+  }
+
+  .form__pet-info {
+    margin: 0 80px 0 111px;
+  }
+
+  .name-input{
+    width: 509px;
+    height: 50px;
+    padding: 0;
+    border: 1px solid;
+  }
+
+  .weight-input {
+    width: 481px;
+    height: 50px;
+    padding: 0;
+    border: 1px solid;
+  }
+
+  .age-input {
+    width: 439px;
+    height: 50px;
+    padding: 0;
+    border: 1px solid;
+  }
+
+  .form__filter--weight {
+    width: 568px;
+    margin: 0 112px 0 0;
+    padding: 0;
+  }
+
+  .form__filter-list {
+    margin: 0;
+    padding: 25px 0 25px 28px;
+  }
+
+  .form__filter-item {
+    margin-bottom: 13px;
+  }
+
+  .form__filter-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .form__desktop-container {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 65px;
+  }
+
+  .form__owner-contacts-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__owner-contacts-title {
+    padding: 0 0 76px 110px;
+    font-size: 36px;
+  }
+
+  .form__info--owner-email {
+    margin-left: 111px;
+    margin-right: 78px;
+    margin-bottom: 0;
+  }
+
+  .form__info--owner-number {
+    margin: 0 110px 0 0;
+  }
+
+  .email-input {
+    width: 486px;
+    height: 52px;
+    margin-left: 20px;
+  }
+
+  .numper-input {
+    width: 486px;
+    height: 52px;
+    margin-left: 20px;
+  }
+
+  .form__pet-details-title {
+    padding: 67px 0 76px 110px;
+    font-size: 36px;
+  }
+
+  .form__comment-area {
+    margin: 0 110px;
+    padding: 10px 0 0 19px;
+
+    width: 1220px;
+    min-height: 174px;
+  }
+
+  .form__filter-add-products-title {
+    padding: 67px 0 57px 110px;
+    font-size: 36px;
+  }
+
+  .form__filter-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    padding: 0;
+    margin: 0 0 61px 110px;
+    width: 1125px;
+  }
+
+  .form__filter-item-wrap {
+    margin: 0;
+  }
+
+  .form__filter-item {
+    font-size: 20px;
+  }
+
+  .form__filter-item--sweetener {
+    margin-right: 104px;
+    margin-bottom: 0;
+  }
+
+  .form__filter-item--milk {
+    margin-right: 197px;
+    margin-left: 136px;
+  }
+
+  .form__button {
+    width: 568px;
+    height: 52px;
+    margin: 0 84px 82px 111px;
+  }
+
+  .form__field-requirement {
+    font-size: 16px;
+    margin: 0 0 101px 0;
+  }
+
+
+
 }
