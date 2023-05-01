@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 30px ;
+    padding: 0 30px;
   }
   .main-header__logo-mobile {
     display: flex;
