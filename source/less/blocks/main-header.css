@@ -20,9 +20,10 @@
 @media (min-width: 320px) and (max-width: 768px) {
   .main-header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 30px;
+    flex-direction: column;
+    padding: 10px 20px 17.39px 20px;
+    color: #111111;
+    background-color: #ffffff;
   }
   .main-header__logo-mobile {
     display: flex;
