@@ -1,11 +1,15 @@
-
 .programs {
   padding: 0 20px;
 }
 
 .programs__header {
-  background-image: url("/source/img/index-background.jpg");
-  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  background-image: url("./img/index-background.jpg");
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .programs__headline {
@@ -24,6 +28,21 @@
   color: rgba(255, 255, 255, 1);
 }
 
+.programs__main-button {
+  width: 280px;
+  height: 40px;
+  border: 0;
+
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 1);
+}
+
 .programs__list {
   padding: 0;
   margin: 0;
@@ -33,9 +52,10 @@
 .programs__item {
   background-color: rgba(217, 217, 217, 1);
 
-  min-width: 260px;
+  min-width: 240px;
   min-height: 246px;
   margin: 20px 0;
+  padding: 20px;
 }
 
 .programs__item:last-child {
@@ -43,8 +63,14 @@
 }
 
 .programs__title {
-  color: rgba(0, 0, 0, 1);
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: left;
   text-transform: uppercase;
+
+  color: rgba(0, 0, 0, 1);
 }
 
 .programs__description {
@@ -53,15 +79,21 @@
   .secondary-description();
 }
 
-.programs__main-button {
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-}
-
 .programs__button {
-  color: rgba(0, 0, 0, 1);
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
   text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+  background-color: transparent;
+
   margin: 38px 122px 18px 19px;
+  width: 134px;
+  height: 24px;
+  border: 0;
+
 }
 
 @media (min-width: 769px) {
@@ -78,9 +110,18 @@
     color: rgba(0, 0, 0, 1);
   }
 
+  .programs__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .programs__item {
     min-width: 708px;
     min-height: 372px;
+
+    margin-bottom: 30px;
   }
 }
 
@@ -90,14 +131,21 @@
   }
 
   .programs__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .programs__items-container {
+    margin-top: 82px;
   }
 
   .programs__item {
     min-width: 570px;
     min-height: 374px;
     margin: 0;
+    padding: 0;
   }
 }
