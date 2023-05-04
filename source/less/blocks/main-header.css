@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: column;
   padding: 10px 20px 17.39px 20px;
-  color: rgba(17, 17, 17, 1);
-  background-color: rgba(255, 255, 255, 1);
+  color: #111111;
+  background-color: #ffffff;
 }
-
 .main-header__nav {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -13,39 +12,32 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
-
 .main-nav__list {
   list-style-type: none;
 }
-
 @media (min-width: 320px) and (max-width: 768px) {
   .main-header {
     display: flex;
     flex-direction: column;
     padding: 10px 20px 17.39px 20px;
-    color: rgba(17, 17, 17, 1);
-    background-color: rgba(255, 255, 255, 1);
+    color: #111111;
+    background-color: #ffffff;
   }
-
   .main-header__logo-mobile {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     min-height: 37.61px;
   }
-
   .main-header__logo-tablet {
     display: none;
   }
-
   .main-header__logo-desktop {
     display: none;
   }
 }
-
 @media (min-width: 769px) and (max-width: 1439px) {
   .main-header {
     display: flex;
@@ -53,20 +45,16 @@
     justify-content: space-between;
     padding: 0 30px;
   }
-
   .main-header__logo-tablet {
     height: 51.68px;
   }
-
   .main-header__logo-mobile {
     display: none;
   }
-
   .main-header__logo-desktop {
     display: none;
   }
 }
-
 @media (min-width: 1440px) {
   .main-header {
     display: flex;
@@ -74,15 +62,12 @@
     justify-content: space-between;
     padding: 54px 110px 0 110px;
   }
-
   .main-header__logo-tablet {
     display: none;
   }
-
   .main-header__logo-mobile {
     display: none;
   }
-
   .main-header__logo-desktop {
     height: 59px;
   }

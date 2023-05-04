@@ -1,65 +1,50 @@
-
 .reviews {
   padding: 0 20px;
-  background: rgba(234, 234, 234, 1);
+  background: #eaeaea;
 }
-
 .reviews__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .reviews__title {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-align: left;
-
   margin-top: 25px;
   margin-bottom: 40px;
-
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
-
 .reviews__description {
-  color: rgba(68, 68, 68, 1);
-
+  color: #444444;
   margin: 0;
-
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
-
 .reviews__results-container {
   margin-top: 20px;
   margin-bottom: 20px;
-
   display: flex;
   flex-direction: row;
 }
-
 .reviews__results__number {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
-
 .reviews__results__description {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-
-  color: rgba(68, 68, 68, 1);
+  color: #444444;
 }
-
 .reviews__money-summary {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -67,55 +52,43 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 1);
-
+  color: #000000;
   margin-bottom: 20px;
 }
-
 @media (min-width: 769px) {
   .reviews {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #ffffff;
   }
-
   .reviews__container {
     padding: 43px 30px 100px 30px;
   }
-
   .reviews__results {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     margin-top: 54px;
   }
-
   .reviews__title {
     margin-bottom: 63px;
   }
 }
-
 @media (min-width: 1440px) {
   .reviews__container {
     padding: 0;
   }
-
   .reviews__title {
     margin-bottom: 146px;
     padding-left: 110px;
   }
-
   .reviews__desktop-wrap {
     display: flex;
     flex-direction: column;
-
     width: 436px;
     height: 317px;
     padding: 70px 894px 75px 110px;
-
-    background-color: rgba(242, 242, 242, 1);
+    background-color: #f2f2f2;
   }
-
   .reviews__results {
     margin-top: 69px;
     display: flex;
