@@ -13,7 +13,7 @@
 }
 .main-footer__logo::after {
   position: absolute;
-  content: url(../img/footer-divider-mobile.svg);
+  content: url("../img/footer-divider-mobile.svg");
   top: 64px;
   left: -90px;
 }
@@ -23,7 +23,7 @@
 }
 .main-footer__social::after {
   position: absolute;
-  content: url(../img/footer-divider-mobile.svg);
+  content: url("../img/footer-divider-mobile.svg");
   top: 34px;
   left: 0;
 }

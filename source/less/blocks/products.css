@@ -21,8 +21,7 @@
 }
 .product-card::before {
   position: absolute;
-  content: "";
-  content: url(../img/catalog-divider-mobile.png);
+  content: url("../img/catalog-divider-mobile.png");
   top: -8px;
 }
 .product-card__container {
@@ -85,8 +84,7 @@
 }
 .product-card--show-more::after {
   position: absolute;
-  content: "";
-  content: url(../img/catalog-divider-mobile.png);
+  content: url("../img/catalog-divider-mobile.png");
   top: 208px;
 }
 .product-card__icon {
