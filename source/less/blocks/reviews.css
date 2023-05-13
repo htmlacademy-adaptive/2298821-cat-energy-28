@@ -10,6 +10,7 @@
 .reviews__title {
   color: #000000;
   text-align: left;
+  align-self: flex-start;
   margin-top: 25px;
   margin-bottom: 40px;
   font-family: "Oswald", sans-serif;
@@ -30,6 +31,17 @@
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews__results__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  min-width: 124px;
+  min-height: 70px;
+  position: relative;
 }
 .reviews__results__number {
   font-family: "Oswald", sans-serif;
@@ -38,12 +50,34 @@
   line-height: 24px;
   color: #000000;
 }
+.reviews__results__number--weight {
+  margin: 0;
+  padding: 14.47px 42.37px 17.53px 42.63px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+}
+.reviews__results__number--days {
+  margin: 0;
+  padding: 14.47px 21.37px 17.53px 20.63px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+}
 .reviews__results__description {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
+  background-color: #eaeaea;
+  text-align: center;
+  position: absolute;
+  top: 40px;
+}
+.reviews__results__description--weight {
+  margin: 7.53px 25px 0 22px;
+}
+.reviews__results__description--days {
+  margin: 7.53px 33px 0 32px;
 }
 .reviews__money-summary {
   font-family: "Oswald", sans-serif;
@@ -53,14 +87,16 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 @media (min-width: 769px) {
   .reviews {
+    padding: 0;
     background-color: #ffffff;
   }
   .reviews__container {
-    padding: 43px 30px 100px 30px;
+    padding: 43px 30px 0 30px;
   }
   .reviews__results {
     display: flex;
@@ -69,8 +105,45 @@
     align-items: center;
     margin-top: 54px;
   }
+  .reviews__results__wrap {
+    min-width: 162px;
+    min-height: 77px;
+  }
+  .reviews__results-container {
+    margin: 0;
+  }
+  .reviews__results__number--weight {
+    padding: 15px 57px 20px 57px;
+  }
+  .reviews__results__number--days {
+    padding: 15px 30px 20px 30px;
+  }
+  .reviews__results__description {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+  .reviews__results__description--weight {
+    margin: 11px 34px 0 32px;
+  }
+  .reviews__results__description--days {
+    margin: 11px 19px 0 18px;
+  }
+  .reviews__money-summary {
+    width: 174px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    padding-top: 11px;
+    margin-bottom: 0;
+  }
   .reviews__title {
+    margin-top: 0;
     margin-bottom: 63px;
+  }
+  .reviews__description {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 @media (min-width: 1440px) {
@@ -78,7 +151,9 @@
     padding: 0;
   }
   .reviews__title {
-    margin-bottom: 146px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 76px;
     padding-left: 110px;
   }
   .reviews__desktop-wrap {
@@ -93,5 +168,19 @@
     margin-top: 69px;
     display: flex;
     flex-direction: column;
+  }
+  .reviews__results__wrap--weigth {
+    margin-right: 42px;
+  }
+  .reviews__results-container {
+    justify-content: space-between;
+  }
+  .reviews__results__description {
+    background-color: #f2f2f2;
+  }
+  .reviews__money-summary {
+    text-align: center;
+    min-width: 327px;
+    padding-top: 55px;
   }
 }

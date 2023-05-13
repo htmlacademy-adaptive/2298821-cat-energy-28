@@ -1,98 +1,77 @@
 .programs {
   padding: 0 20px;
 }
-
 .programs__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
-
 .programs__header-wrap {
   position: relative;
-
   min-width: 320px;
   min-height: 302px;
   background-image: url("../img/index-background.jpg");
-  background-color: rgba(104, 183, 56, 1);
+  background-color: #68b738;
 }
-
 .programs__can-image {
   position: absolute;
   top: 261px;
 }
-
 .programs__headline {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   text-align: center;
-
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-
-
   margin: 0;
   padding-top: 27px;
 }
-
 .programs__slogan {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
-
+  color: #ffffff;
   margin: 0;
   padding: 25px 62px 0 60px;
 }
-
 .programs__main-button {
   width: 280px;
   height: 40px;
   border: 0;
-
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-
-  color: rgba(255, 255, 255, 1);
-
+  color: #ffffff;
   margin-top: 138px;
 }
-
 .programs__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-
 .programs__item {
-  background-color: rgba(234, 234, 234, 1);
-
+  background-color: #eaeaea;
   min-width: 240px;
   min-height: 246px;
   margin: 20px 0;
   padding: 20px;
 }
-
 .programs__item:last-child {
   margin-bottom: 0;
 }
-
 .programs__item-wrap {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .programs__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -100,33 +79,25 @@
   line-height: 37px;
   text-align: left;
   text-transform: uppercase;
-
-  color: rgba(0, 0, 0, 1);
-
+  color: #000000;
   margin: 0;
 }
-
 .programs__title--slim {
   margin-left: 19px;
 }
-
 .programs__title--pro {
   margin-left: 11px;
 }
-
 .programs__description {
   position: relative;
-  color: rgba(68, 68, 68, 1);
-
+  color: #444444;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-
   margin: 22px 0 38px 0;
 }
-
 .programs__description::after {
   position: absolute;
   top: 98px;
@@ -134,7 +105,6 @@
   content: "";
   content: url(../img/programs-item-divider.png);
 }
-
 .programs__button {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -142,19 +112,16 @@
   line-height: 16px;
   text-align: left;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   background-color: transparent;
-
   margin: 0;
   margin-bottom: 0;
   padding: 0;
   width: 134px;
   height: 24px;
   border: 0;
-
   position: relative;
 }
-
 .programs__button--slim::after {
   position: absolute;
   content: "";
@@ -162,7 +129,6 @@
   left: 102px;
   top: 5px;
 }
-
 .programs__button--pro::after {
   position: absolute;
   content: "";
@@ -170,144 +136,109 @@
   left: 98px;
   top: 5px;
 }
-
 .programs__desktop-header-image {
   display: none;
 }
-
 @media (min-width: 769px) {
   .programs {
     padding: 0 30px;
   }
-
   .programs__header-wrap {
     position: relative;
-
     background-image: none;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #ffffff;
   }
-
   .programs__can-image {
     position: absolute;
     top: 317px;
-
     width: 709px;
     height: 609px;
   }
-
   .programs__headline {
-    color: rgba(0, 0, 0, 1);
-
+    color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
     text-align: left;
-
     padding: 62px 207px 41px 88px;
   }
-
   .programs__slogan {
-    color: rgba(0, 0, 0, 1);
-
+    color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-
     padding: 0 336px 0 90px;
   }
-
   .programs__main-button {
     position: absolute;
     top: 346px;
     right: 404px;
     left: 121px;
-
     width: 244px;
     height: 54px;
     margin: 0;
-
     font-size: 20px;
     line-height: 20px;
   }
-
   .programs__list {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     margin-top: 526px;
   }
-
   .programs__item {
     min-width: 656px;
     min-height: 242px;
-
     margin-top: 0;
     margin-bottom: 30px;
     padding: 77px 0 53px 52px;
-
     position: relative;
   }
-
   .programs__item:last-child {
     margin-bottom: 0;
   }
-
   .programs__item-wrap {
     display: block;
   }
-
   .programs__icon--slim {
     position: absolute;
     top: 81px;
     right: 91.93px;
-
     width: 140px;
     height: 194px;
   }
-
   .programs__icon--pro {
     position: absolute;
     top: 135px;
     right: 28px;
-
     width: 268px;
     height: 112px;
   }
-
   .programs__title {
     margin: 0;
-
     font-size: 36px;
     line-height: 36px;
   }
-
   .programs__description {
     font-size: 16px;
     line-height: 24px;
     text-align: left;
-
     width: 340px;
     margin: 24px 316px 48px 0;
   }
-
   .programs__description::after {
     display: none;
   }
-
   .programs__button {
     width: 108px;
     height: 30px;
-
     font-size: 20px;
     line-height: 29.64px;
-
     position: relative;
   }
-
   .programs__button--slim::after {
     position: absolute;
     content: "";
@@ -315,7 +246,6 @@
     left: 133px;
     top: 0;
   }
-
   .programs__button--pro::after {
     position: absolute;
     content: "";
@@ -323,58 +253,45 @@
     left: 129px;
     top: 0;
   }
-
   .programs__desktop-header-image {
     display: none;
   }
 }
-
 @media (min-width: 1440px) {
   .programs {
     padding: 0 110px;
   }
-
   .programs__headline {
-    color: rgba(0, 0, 0, 1);
+    color: #000000;
     text-align: left;
-
     font-family: "Oswald", sans-serif;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
-
     padding: 111px 700px 40px 80px;
   }
-
   .programs__slogan {
-    color: rgba(0, 0, 0, 1);
-
+    color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-
     padding: 0 auto 0 160px;
   }
-
   .programs__can-image {
     position: absolute;
     top: 141px;
     left: 558px;
-
     width: 552px;
     height: 499px;
   }
-
   .programs__main-button {
     position: absolute;
     top: 455px;
     left: 190px;
-
     width: 244px;
     height: 54px;
   }
-
   .programs__list {
     display: grid;
     grid-template-columns: 570px 570px;
@@ -382,57 +299,43 @@
     align-items: center;
     margin: 267px auto 0 auto;
   }
-
   .programs__items-container {
     margin-top: 82px;
   }
-
   .programs__item {
     min-width: 518px;
     min-height: 278px;
     margin: 0;
   }
-
   .programs__item--slim {
     padding: 41px 0 55px 52px;
   }
-
   .programs__item--pro {
     padding: 47px 0 55px 52px;
   }
-
   .programs__item-wrap {
     display: flex;
     flex-direction: row;
-
     margin-bottom: 39px;
   }
-
   .programs__icon {
     position: static;
   }
-
   .programs__icon--slim {
     width: 70px;
     height: 97px;
-
     margin-right: 77px;
   }
-
   .programs__icon--pro {
     width: 134px;
     height: 56px;
-
     margin-right: 47px;
   }
-
   .programs__description {
     font-size: 16px;
     line-height: 24px;
     text-align: left;
-
     width: 457px;
-
     margin: 0 0 23px 0;
   }
 }
