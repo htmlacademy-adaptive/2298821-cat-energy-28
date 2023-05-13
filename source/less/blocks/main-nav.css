@@ -52,11 +52,15 @@
   transform: rotate(-45deg);
 }
 .main-nav--nojs .main-nav__wrapper {
-  position: static;
   min-height: 0;
 }
 .main-nav--nojs .site-list__item {
   display: block;
+}
+.main-nav__wrapper {
+  position: absolute;
+  top: 66px;
+  left: 0;
 }
 @media (max-width: 768px) {
   .main-nav--closed .site-list__item {
