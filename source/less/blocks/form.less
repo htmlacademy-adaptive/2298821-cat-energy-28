@@ -140,7 +140,7 @@
 }
 
 .control-input:default + .control-mark {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
@@ -154,11 +154,11 @@
   background-color: rgba(104, 183, 56, 1);
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before, .control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
   top: 8px;
   left: 6px;
-  content: "";
   content: url("../img/checkbox-input-icon.svg");
 }
 
@@ -383,14 +383,6 @@
     margin-bottom: 13px;
   }
 
-  .form__filter-item-add {
-    min-height: 40px;
-    font-size: 20px;
-    line-height: 29.64px;
-
-    margin-bottom: 13px;
-  }
-
   .control {
     padding-left: 60px;
   }
@@ -407,11 +399,11 @@
     left: 11px;
   }
 
-  .control-input[type="checkbox"]:checked + .control-mark::before, .control-input[type="checkbox"]:checked + .control-mark::after {
+  .control-input[type="checkbox"]:checked + .control-mark::before,
+  .control-input[type="checkbox"]:checked + .control-mark::after {
     position: absolute;
     top: 7px;
     left: 7px;
-    content: "";
     content: url("../img/checkbox-input-icon.svg");
   }
 
@@ -463,10 +455,6 @@
 
     margin-left: 20px;
     padding: 11px 0 11px 20px;
-  }
-
-  .form__info {
-    margin-bottom: 20px;
   }
 
   .form__info:last-child {
@@ -531,6 +519,7 @@
   .form__filter-item-add {
     min-height: 40px;
     padding: 0;
+    margin-bottom: 13px;
 
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -757,6 +746,7 @@
   }
 
   .form__filter-item {
+    min-width: 540px;
     font-size: 20px;
     margin-bottom: 13px;
   }
