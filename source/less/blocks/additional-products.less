@@ -22,7 +22,12 @@
 }
 
 .additional-products__item {
-  margin-bottom: 31px;
+  min-height: 98px;
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  border-top: 0.5px solid rgba(205, 205, 205, 1);
+  border-bottom: 0.5px solid rgba(205, 205, 205, 1);
 }
 
 .additional-products__item:last-child {
@@ -75,18 +80,23 @@
   .additional-products__title {
     margin: 0;
     padding: 68px 0 80px 67px;
+
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .additional-products__list {
-    width: 632px;
+    width: 708px;
     margin: 0 auto;
-    padding: 26px 38px;
-
-    border: 1px solid rgba(205, 205, 205, 1);
+    padding: 0;
   }
 
   .additional-products__item {
-    margin-bottom: 54px;
+    padding: 26px 38px 28px 38px;
+
+    min-height: 85px;
+
+    border: 0.5px solid rgba(205, 205, 205, 1);
   }
 
   .additional-products__item-wrap {
@@ -102,10 +112,15 @@
     justify-content: space-between;
 
     margin-bottom: 23px;
+
+    min-width: 632px;
   }
 
   .additional-products__item-title {
     margin-right: 244px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .additional-products__item-details {
@@ -118,6 +133,9 @@
 
   .additional-products__item-description {
     margin: 0;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .amount-description {
@@ -147,7 +165,15 @@
   }
 
   .additional-products__item {
-    margin-bottom: 42px;
+    padding: 15px 0 17px 0;
+
+    min-height: 40px;
+    min-width: 894px;
+
+    border-top: 0.5px solid rgba(205, 205, 205, 1);
+    border-bottom: 0.5px solid rgba(205, 205, 205, 1);
+    border-left: 0;
+    border-right: 0;
   }
 
   .additional-products__item-wrap {
@@ -165,6 +191,10 @@
     margin-right: 0;
   }
 
+  .additional-products__item-details {
+    text-align: left;
+  }
+
   .amount-description--sweetener {
     width: 131px;
     margin-left: 164px;
@@ -174,7 +204,7 @@
   .amount-description--water {
     width: 66px;
     margin-left: 195px;
-    margin-right: 178px;
+    margin-right: 170px;
   }
 
   .amount-description--milk {

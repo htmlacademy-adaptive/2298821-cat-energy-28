@@ -54,9 +54,7 @@
   color: #444444;
   margin: 0;
 }
-.product-details__weight,
-.product-details__taste,
-.product-details__price {
+.product-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -112,6 +110,8 @@
   .products__title {
     margin: 0;
     padding: 65px 0 82px 30px;
+    font-size: 60px;
+    line-height: 60px;
   }
   .products__list {
     margin: 0 auto;
@@ -128,29 +128,74 @@
     align-items: center;
     background-color: #f2f2f2;
   }
+  .product-card::before {
+    display: none;
+  }
   .product-card__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 33px;
+    min-width: 252px;
   }
   .product-card__details-wrap {
     padding-top: 34px;
     padding-bottom: 0;
+    min-width: 252px;
+  }
+  .product-card__title {
+    margin: 0 36.5px 21px 41.5px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .product-details {
+    margin-bottom: 14px;
+    position: relative;
+  }
+  .product-details::after {
+    position: absolute;
+    content: url("../img/catalog-divider-tablet.png");
+    top: 9px;
+  }
+  .product-details:last-child {
+    margin-bottom: 9px;
+  }
+  .product-details__description {
+    font-size: 16px;
+    line-height: 16px;
   }
   .product-card__button {
     width: 248px;
+    margin: 0 37px 38px 38px;
   }
   .product-card--show-more {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 0;
+    min-width: 324px;
+    border: 2px solid #f2f2f2;
+  }
+  .product-card--show-more::before,
+  .product-card--show-more::after {
+    display: none;
+  }
+  .product-card__icon {
+    margin: 52px 132px 0 132px;
+    width: 60px;
+    height: 60px;
   }
   .product-card__title-show-more {
-    margin: 54px 94px 23px 96px;
+    margin: 49px 94px 23px 96px;
+    font-size: 20px;
+    line-height: 22px;
   }
   .product-card__description-show-more {
     margin: 0 79px 87px 80px;
+    font-size: 16px;
+    line-height: 18px;
     text-align: center;
   }
 }
@@ -166,11 +211,36 @@
     gap: 80px;
     justify-content: center;
   }
-  .product-card {
-    padding: 0 30px 40px 35px;
+  .product-card:not(.product-card--show-more) {
+    padding: 0;
+  }
+  .product-card__container {
+    min-width: 180px;
+    align-items: center;
   }
   .product-card__details-wrap {
     padding-top: 46px;
+    min-width: 180px;
+  }
+  .product-details {
+    min-width: 180px;
+    margin-bottom: 15.65px;
+    position: relative;
+  }
+  .product-details:last-child {
+    margin-bottom: 10.13px;
+  }
+  .product-details::after {
+    position: absolute;
+    content: url("../img/catalog-divider-desktop.png");
+    top: 10.13px;
+  }
+  .product-card__title {
+    width: 145px;
+    margin: 0 15px 21.58px 20px;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: center;
   }
   .product-card__button {
     width: 168px;
@@ -180,11 +250,19 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
+    width: 245px;
+  }
+  .product-card__details {
+    min-width: 245px;
+  }
+  .product-card__icon {
+    margin-top: 51px;
   }
   .product-card__title-show-more {
     margin: 49px 55px 23px 56px;
   }
   .product-card__description-show-more {
+    min-width: 165px;
     margin: 0 40px 87px 40px;
     text-align: center;
   }

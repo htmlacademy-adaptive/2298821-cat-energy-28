@@ -1,5 +1,5 @@
 .form {
-  padding: 0 20px;
+  padding: 0;
   margin: 0 auto;
 
   display: flex;
@@ -8,12 +8,13 @@
 }
 
 .form__title {
-  padding-top: 27px;
-  padding-bottom: 37px;
+  padding: 27px 0 37px 20px;
   margin: 0;
   color: rgba(0, 0, 0, 1);
 
   .main-headline();
+
+  align-self: flex-start;
 }
 
 .form__description {
@@ -22,10 +23,14 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: left;
   color: rgba(0, 0, 0, 1);
 
   padding-bottom: 39px;
+  padding-left: 20px;
   margin: 0;
+
+  align-self: start;
 }
 
 .form__info {
@@ -37,29 +42,124 @@
   line-height: 18px;
   text-transform: uppercase;
   color: rgba(68, 68, 68, 1);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .form__info:last-child {
-  margin-bottom: 0;
+  margin-bottom: 24px;
 }
 
 .form__pet-info {
   margin: 0;
   padding: 0;
+
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  margin-left: 13px;
+
+  border: 1px solid rgba(231, 231, 231, 1);
+  border-radius: 0;
+  padding: 14px 0 13px 20px;
+
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(68, 68, 68, 1);
+}
+
+.name-input {
+  min-width: 208px;
+}
+
+.weight-input {
+  min-width: 187px;
+}
+
+.age-input {
+  min-width: 153px;
 }
 
 .form__filter-item {
   text-transform: uppercase;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
+
+  min-height: 30px;
 }
 
 .form__filter-item:last-child {
   margin-bottom: 0;
 }
 
+.form__filter-list-weight {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .form__filter--weight {
-  margin-top: 46px;
-  margin-bottom: 19px;
+  padding: 22px 20px 19px 20px;
+
+  border-top: 1px solid rgba(217, 217, 217, 1);
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
+
+.control {
+  padding-left: 45px;
+
+  position: relative;
+}
+
+.control-input[type="radio"] + .control-mark {
+  top: -12px;
+  left: 0;
+  border-radius: 50px;
+}
+
+.control-input[type="checkbox"] + .control-mark {
+  top: 0;
+  left: 0;
+  border-radius: 0;
+}
+
+.control-mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid rgba(205, 205, 205, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.control-input:default + .control-mark {
+  background-color: rgba(255,255,255,1);
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 8.5px;
+  left: 8.5px;
+  border-radius: 50px;
+  content: "";
+  background-color: rgba(104, 183, 56, 1);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before, .control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  content: "";
+  content: url("../img/checkbox-input-icon.svg");
 }
 
 .form__filter-list {
@@ -67,7 +167,12 @@
   margin: 0;
   padding-top: 0;
   padding-left: 0;
-  padding-bottom: 34px;
+  padding-bottom: 22px;
+}
+
+.form__filter-item-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__section-title {
@@ -78,10 +183,53 @@
   color: rgba(0, 0, 0, 1);
 }
 
+.input-field-owner-info {
+  margin-left: 10px;
+
+  border: 1px solid rgba(231, 231, 231, 1);
+  border-radius: 0;
+  padding: 14.72px 0 14.17px 15px;
+
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(68, 68, 68, 1);
+}
+
+.email-input {
+  min-width: 205px;
+  text-transform: uppercase;
+
+  position: relative;
+}
+
+.email-input::after {
+  position: absolute;
+  content: url("../img/form-mail-icon.svg");
+  top: 13px;
+  right: 15px;
+  z-index: 8;
+}
+
+.number-input {
+  min-width: 187px;
+}
+
+.form__owner-contacts {
+  padding: 0 20px;
+}
+
 .form__owner-contacts-title {
   padding-top: 26px;
   padding-bottom: 35px;
   margin: 0;
+
+  text-align: left;
+}
+
+.form__pet-details {
+  padding: 0 20px;
 }
 
 .form__pet-details-title {
@@ -104,6 +252,24 @@
   color: rgba(68, 68, 68, 1);
 
   text-transform: uppercase;
+
+  border: 1px solid rgba(231, 231, 231, 1);
+}
+
+.form__filter--additional-products {
+  padding: 0 20px;
+}
+
+.form__filter-item-add {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  min-height: 30px;
+
+  padding-bottom: 13px;
 }
 
 .form__filter-add-products-title {
@@ -124,7 +290,7 @@
   padding: 0;
   border: 0;
 
-  margin-bottom: 21px;
+  margin: 0 20px 21px 20px;
 }
 
 .form__field-requirement {
@@ -135,7 +301,7 @@
   color: rgba(0, 0, 0, 1);
 
   margin: 0;
-  padding: 0 63px;
+  padding: 0 63px 32px 63px;
 }
 
 @media (min-width: 769px) {
@@ -149,14 +315,14 @@
   }
 
   .form__title {
-    padding-top: 65px;
-    padding-bottom: 54px;
+    padding: 65px 0 54px 0;
 
     align-self: flex-start;
   }
 
   .form__description {
     padding-bottom: 66px;
+    padding-left: 0;
     line-height: 30px;
 
     align-self: flex-start;
@@ -175,42 +341,91 @@
     margin-bottom: 20px;
 
     font-size: 20px;
+    line-height: 29.64px;
+  }
+
+  .input-field {
+    padding: 11px 0 11px 20px;
+    margin-left: 13px;
+
+    font-size: 20px;
+    line-height: 29.64px;
   }
 
   .name-input {
-    width: 570px;
-    height: 52px;
-    margin-left: 13px;
+    min-width: 550px;
   }
 
   .weight-input {
-    width: 542px;
-    height: 52px;
-    margin-left: 13px;
+    min-width: 522px;
   }
 
   .age-input {
-    width: 500px;
-    height: 52px;
-    margin-left: 13px;
+    min-width: 480px;
   }
 
   .form__filter--weight {
-    width: 602px;
+    border: 0;
+  }
+
+  .form__filter-list-weight {
+    width: 600px;
     margin: 0 auto 71px auto;
     padding: 25px 0 25px 27.93px;
     border: 1px solid rgba(231, 231, 231, 1);
   }
 
+  .form__filter-item {
+    min-height: 40px;
+    font-size: 20px;
+    line-height: 29.64px;
+
+    margin-bottom: 13px;
+  }
+
+  .form__filter-item-add {
+    min-height: 40px;
+    font-size: 20px;
+    line-height: 29.64px;
+
+    margin-bottom: 13px;
+  }
+
+  .control {
+    padding-left: 60px;
+  }
+
+  .control-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .control-input[type="radio"]:checked + .control-mark::before {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
+
+  .control-input[type="checkbox"]:checked + .control-mark::before, .control-input[type="checkbox"]:checked + .control-mark::after {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    content: "";
+    content: url("../img/checkbox-input-icon.svg");
+  }
+
   .form__owner-contacts {
     width: 630px;
-    margin: 0 auto;
+    margin: 0 auto 65px auto;
+    padding: 0;
   }
 
   .form__owner-contacts-title {
     padding-top: 0;
     padding-bottom: 76px;
     font-size: 36px;
+    line-height: 36px;
 
     align-self: left;
   }
@@ -221,29 +436,53 @@
   }
 
   .form__info--owner-number {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 65px auto;
   }
 
   .email {
     width: 63px;
+
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+
+  .number {
+    font-size: 20px;
+    line-height: 29.64px;
   }
 
   .email-input {
-    width: 548px;
-    height: 52px;
+    min-width: 528px;
+
     margin-left: 20px;
+    padding: 11px 0 11px 20px;
   }
 
-  .numper-input {
-    width: 529px;
-    height: 52px;
+  .number-input {
+    min-width: 509px;
+
     margin-left: 20px;
+    padding: 11px 0 11px 20px;
+  }
+
+  .form__info {
+    margin-bottom: 20px;
+  }
+
+  .form__info:last-child {
+    margin-bottom: 0;
+  }
+
+  .form__pet-details {
+    padding: 0;
   }
 
   .form__pet-details-title {
-    padding-top: 65px;
+    padding-top: 0;
     padding-bottom: 76px;
+
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .form__comment-area {
@@ -255,8 +494,15 @@
     min-height: 174px;
   }
 
+  .form__filter {
+    padding: 0;
+  }
+
   .form__filter-add-products-title {
-    padding: 65px 0 57px 70px;
+    padding: 65px 0 57px 0;
+
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .form__filter-list {
@@ -273,6 +519,7 @@
   .form__filter-item-wrap {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     margin-bottom: 32px;
   }
@@ -281,16 +528,45 @@
     margin-bottom: 0;
   }
 
-  .form__filter-item {
-    margin: 0;
+  .form__filter-item-add {
+    min-height: 40px;
+    padding: 0;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29.64px;
+    text-transform: uppercase;
   }
 
-  .form__filter-item--sweetener {
+  .form__filter-item-add--sweetener {
     margin-right: 123px;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 29.64px;
   }
 
-  .form__filter-item--milk {
-    margin-right: 216px;
+  .form__filter-item-add--water {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+
+  .form__filter-item-add--milk {
+    margin-right: 200px;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+
+  .form__filter-item-add--vitamins {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 29.64px;
   }
 
   .form__summary {
@@ -327,43 +603,59 @@
 
   .form__title {
     padding: 73.52px 0 56px 0;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .form__description {
     padding: 0 0 66px 0;
+    font-size: 20px;
     line-height: 30px;
   }
 
   .form__pet-info {
     width: 569px;
     margin: 0 80px 0 auto;
+
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+
+  .input-field {
+    padding: 11px 0 20px 11px;
+    border: 1px solid rgba(231, 231, 231, 1);
   }
 
   .name-input {
-    width: 509px;
-    height: 50px;
-    padding: 0;
-    border: 1px solid;
+    min-width: 489px;
   }
 
   .weight-input {
-    width: 481px;
-    height: 50px;
-    padding: 0;
-    border: 1px solid;
+    min-width: 461px;
   }
 
   .age-input {
-    width: 439px;
-    height: 50px;
-    padding: 0;
-    border: 1px solid;
+    min-width: 419px;
   }
 
   .form__filter--weight {
     width: 568px;
     margin: 0 auto 0 0;
     padding: 0;
+
+    border: 1px solid rgba(231, 231, 231, 1);
+  }
+
+  .form__filter-list-weight {
+    margin-bottom: 0;
+
+    width: 540;
+    padding: 25px 0 25px 27.93px;
+    border: 0;
+  }
+
+  .form__filter-item {
+    min-width: 540px;
   }
 
   .form__filter-item:last-child {
@@ -374,7 +666,7 @@
     display: flex;
     flex-direction: row;
 
-    margin-bottom: 65px;
+    margin: 0 auto 65px auto;
   }
 
   .form__owner-contacts {
@@ -385,6 +677,15 @@
   .form__owner-contacts-title {
     padding: 0 0 76px 0;
     font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__owner-contacts-desktop {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 20px;
+    line-height: 29.64px;
   }
 
   .form__info--owner-email {
@@ -396,17 +697,17 @@
   }
 
   .email-input {
-    width: 486px;
-    height: 52px;
+    min-width: 466px;
     margin-left: 20px;
 
-    padding: 0;
+    padding: 11px 0 11px 20px;
   }
 
-  .numper-input {
-    width: 486px;
-    height: 52px;
+  .number-input {
+    min-width: 486px;
+
     margin-left: 20px;
+    padding: 11px 0 11px 20px;
   }
 
   .form__pet-details {
@@ -417,6 +718,7 @@
   .form__pet-details-title {
     padding: 67px 0 76px 0;
     font-size: 36px;
+    line-height: 36px;
   }
 
   .form__comment-area {
@@ -424,13 +726,17 @@
     margin-right: auto;
     padding: 10px 0 0 19px;
 
-    width: 1201px;
+    min-width: 1201px;
     min-height: 174px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .form__filter-add-products-title {
     padding: 67px 0 57px 0;
     font-size: 36px;
+    line-height: 36px;
   }
 
   .form__filter-list {
@@ -445,6 +751,9 @@
 
   .form__filter-item-wrap {
     margin: 0;
+
+    font-size: 20px;
+    line-height: 29.64px;
   }
 
   .form__filter-item {
@@ -452,12 +761,12 @@
     margin-bottom: 13px;
   }
 
-  .form__filter-item--sweetener {
+  .form__filter-item-add--sweetener {
     margin-right: 104px;
     margin-bottom: 0;
   }
 
-  .form__filter-item--milk {
+  .form__filter-item-add--milk {
     margin-right: 197px;
     margin-left: 136px;
   }

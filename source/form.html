@@ -143,7 +143,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list .site-list--dark-theme">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
@@ -166,40 +166,40 @@
             <div class="form__pet-info">
               <div class="form__info form__info--name">
                 <label for="pet-name">ИМЯ:*</label>
-                <input class="name-input" type="text" name="name" value="БАРСИК" placeholder="Укажите имя питомца" id="pet-name" required>
+                <input class="name-input input-field" type="text" name="name" value="БАРСИК" placeholder="Укажите имя питомца" id="pet-name" required>
               </div>
               <div class="form__info form__info--weight">
                 <label for="pet-weight">Вес(кг):*</label>
-                <input class="weight-input" type="text" name="weight" value="7" placeholder="Укажите вес питомца" id="pet-weight" required>
+                <input class="weight-input input-field" type="text" name="weight" value="7" placeholder="Укажите вес питомца" id="pet-weight" required>
               </div>
               <div class="form__info form__info--age">
                 <label for="pet-age">Возраст(лет):</label>
-                <input class="age-input" type="text" name="age" value="7" placeholder="Укажите возраст питомца" id="pet-age" required>
+                <input class="age-input input-field" type="text" name="age" value="7" placeholder="Укажите возраст питомца" id="pet-age" required>
               </div>
             </div>
 
             <div class="form__filter form__filter--weight">
-              <ul class="form__filter-list">
+              <ul class="form__filter-list-weight">
                 <li class="form__filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="filter-group" value="weight-loss" checked>
+                    <input class="visually-hidden control-input" type="radio" name="filter-group" value="weight-loss" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label radio-btn-label">Похудение</span>
                   </label>
-                  <span class="control-mark"></span>
-                  <span class="control-label radio-btn-label">Похудение</span>
                 </li>
                 <li class="form__filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="filter-group" value="weight-gain" checked>
+                    <input class="visually-hidden control-input" type="radio" name="filter-group" value="weight-gain" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label radio-btn-label">Набор массы</span>
                   </label>
-                  <span class="control-mark"></span>
-                  <span class="control-label radio-btn-label">Набор массы</span>
                 </li>
                 <li class="form__filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="filter-group" value="need-advice">
+                    <input class="visually-hidden control-input" type="radio" name="filter-group" value="need-advice">
+                    <span class="control-mark"></span>
+                    <span class="control-label radio-btn-label">Не знаю (Нужен ваш совет)</span>
                   </label>
-                  <span class="control-mark"></span>
-                  <span class="control-label radio-btn-label">Не знаю (Нужен ваш совет)</span>
                 </li>
               </ul>
             </div>
@@ -210,11 +210,11 @@
             <div class="form__owner-contacts-desktop">
               <div class="form__info form__info--owner-email">
                 <label for="email">E-mail:*</label>
-                <input class="email-input" type="text" name="email" value="kuklachev@gmail.com" placeholder="Укажите свой электронный адрес" id="email" required>
+                <input class="email-input input-field-owner-info" type="text" name="email" value="kuklachev@gmail.com" placeholder="Укажите свой электронный адрес" id="email" required>
               </div>
               <div class="form__info form__info--owner-number">
                 <label for="number">Телефон:*</label>
-                <input class="numper-input" type="text" name="phonenumber" value="8 (960) 900-60-90" placeholder="Укажите ваш номер телефона" id="number" required>
+                <input class="number-input input-field-owner-info" type="text" name="phonenumber" value="8 (960) 900-60-90" placeholder="Укажите ваш номер телефона" id="number" required>
               </div>
             </div>
           </div>
@@ -228,35 +228,35 @@
             <h2 class="form__section-title form__filter-add-products-title">Дополнительно</h2>
             <ul class="form__filter-list">
               <div class="form__filter-item-wrap">
-                <li class="form__filter-item form__filter-item--sweetener">
+                <li class="form__filter-item-add form__filter-item-add--sweetener">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="filter-group" value="sweetener" checked>
+                    <input class="visually-hidden control-input" type="checkbox" name="filter-group" value="sweetener" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label checkbox-btn-label">сахарозаменитель</span>
                   </label>
-                  <span class="control-mark"></span>
-                  <span class="control-label checkbox-btn-label">сахарозаменитель</span>
                 </li>
-                <li class="form__filter-item">
+                <li class="form__filter-item-add form__filter-item-add--water">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="filter-group" value="water">
+                    <input class="visually-hidden control-input" type="checkbox" name="filter-group" value="water">
+                    <span class="control-mark"></span>
+                    <span class="control-label checkbox-btn-label">питьевая вода</span>
                   </label>
-                  <span class="control-mark"></span>
-                  <span class="control-label checkbox-btn-label">питьевая вода</span>
                 </li>
               </div>
               <div class="form__filter-item-wrap">
-                <li class="form__filter-item form__filter-item--milk">
+                <li class="form__filter-item-add form__filter-item-add--milk">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="filter-group" value="milk">
+                    <input class="visually-hidden control-input" type="checkbox" name="filter-group" value="milk">
+                    <span class="control-mark"></span>
+                    <span class="control-label checkbox-btn-label">молоко</span>
                   </label>
-                  <span class="control-mark"></span>
-                  <span class="control-label checkbox-btn-label">молоко</span>
                 </li>
-                <li class="form__filter-item">
+                <li class="form__filter-item-add form__filter-item-add--vitamins">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="filter-group" value="vitamins">
+                    <input class="visually-hidden control-input" type="checkbox" name="filter-group" value="vitamins">
+                    <span class="control-mark"></span>
+                    <span class="control-label checkbox-btn-label">витамины</span>
                   </label>
-                  <span class="control-mark"></span>
-                  <span class="control-label checkbox-btn-label">витамины</span>
                 </li>
               </div>
             </ul>
@@ -269,5 +269,5 @@
       </section>
     </main>
   </body>
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 </html>

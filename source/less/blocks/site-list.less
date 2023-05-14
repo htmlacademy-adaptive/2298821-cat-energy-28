@@ -41,6 +41,21 @@
     line-height: 24px;
 
     margin-right: 33px;
+    padding-bottom: 10px;
+
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: rgba(104, 183, 56, 1);
+      }
+    }
   }
 
   .site-list a {
@@ -71,6 +86,21 @@
     line-height: 29.64px;
 
     margin-right: 33px;
+    padding-bottom: 10px;
+
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: rgba(104, 183, 56, 1);
+      }
+    }
   }
 
   .site-list a {
@@ -80,10 +110,18 @@
     line-height: 29.64px;
     text-transform: uppercase;
     text-decoration: none;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(104, 183, 56, 1);
 
     border: 0;
     padding: 0;
+  }
+
+  .site-list--light-theme a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(104, 183, 56, 1);
+  }
+
+  .site-list--dark-theme a {
+    color: rgba(17, 17, 17, 1);
+    background-color: rgba(255, 255, 255, 1);
   }
 }
