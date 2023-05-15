@@ -1,7 +1,7 @@
-.main-header {
+.main-header__wrapper {
   display: flex;
-  flex-direction: column;
-  padding: 10px 20px 17.39px 20px;
+  flex-direction: row;
+  align-items: center;
   color: #111111;
   background-color: #ffffff;
 }
@@ -13,23 +13,25 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  height: 37.61px;
 }
 .main-nav__list {
   list-style-type: none;
 }
 @media (min-width: 320px) and (max-width: 768px) {
-  .main-header {
+  .main-header__wrapper {
     display: flex;
-    flex-direction: column;
-    padding: 10px 20px 17.39px 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 37.61px;
+    padding: 10px 20px 17.37px 20px;
     color: #111111;
     background-color: #ffffff;
   }
   .main-header__logo-mobile {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 37.61px;
+    height: 37.61px;
   }
   .main-header__logo-tablet {
     display: none;
@@ -37,9 +39,13 @@
   .main-header__logo-desktop {
     display: none;
   }
+  .main-header__logo-text {
+    min-height: 18px;
+    margin: 0;
+  }
 }
 @media (min-width: 769px) and (max-width: 1439px) {
-  .main-header {
+  .main-header__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,9 +60,12 @@
   .main-header__logo-desktop {
     display: none;
   }
+  .main-header__logo-text {
+    display: none;
+  }
 }
 @media (min-width: 1440px) {
-  .main-header {
+  .main-header__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -66,6 +75,9 @@
     display: none;
   }
   .main-header__logo-mobile {
+    display: none;
+  }
+  .main-header__logo-text {
     display: none;
   }
   .main-header__logo-desktop {

@@ -4,5 +4,24 @@
   margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+}
+.social__item {
+  width: 28px;
+  height: 19px;
+  padding-top: 3px;
+  margin-right: 24px;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+@media (min-width: 769px) {
+  .social__list {
+    margin: 0 120.36px 0 145.2px;
+  }
+}
+@media (min-width: 1440px) {
+  .social__list {
+    margin: 0;
+  }
 }
