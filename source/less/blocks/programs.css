@@ -13,11 +13,22 @@
   min-width: 320px;
   min-height: 302px;
   background-image: url("../img/index-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #68b738;
+}
+@media (min-resolution: 2dppx) {
+  min-width: 320px;
+  min-height: 302px;
+  background-image: url("../img/index-background@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .programs__can-image {
   position: absolute;
-  top: 261px;
+  top: 232px;
+  left: 20px;
+  right: 20px;
 }
 .programs__headline {
   color: #ffffff;
@@ -51,6 +62,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 138px;
+  position: relative;
 }
 .programs__list {
   padding: 0;
@@ -256,6 +268,21 @@
   .programs {
     padding: 0 110px;
   }
+  .programs::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    min-width: 720px;
+    min-height: 694px;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-size: contain;
+    background-position: top right;
+    z-index: 3;
+  }
+  .programs__header-wrap {
+    background-color: transparent;
+  }
   .programs__headline {
     color: #000000;
     text-align: left;
@@ -279,6 +306,7 @@
     left: 558px;
     width: 552px;
     height: 499px;
+    z-index: 6;
   }
   .programs__main-button {
     position: absolute;
@@ -295,7 +323,7 @@
     margin: 267px auto 0 auto;
   }
   .programs__items-container {
-    margin-top: 82px;
+    margin-top: 373px;
   }
   .programs__item {
     min-width: 518px;
@@ -332,5 +360,10 @@
     text-align: left;
     width: 457px;
     margin: 0 0 23px 0;
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .programs::before {
+    background-image: url("../img/index-background-desktop@2x.jpg");
   }
 }

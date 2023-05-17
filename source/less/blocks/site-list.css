@@ -86,7 +86,7 @@
     bottom: 0;
     left: 0;
     height: 2px;
-    background: #68b738;
+    background: #ffffff;
   }
   .site-list a {
     font-family: "Oswald", sans-serif;
@@ -100,7 +100,7 @@
   }
   .site-list--light-theme a {
     color: #ffffff;
-    background-color: #68b738;
+    background-color: transparent;
   }
   .site-list--dark-theme a {
     color: #111111;

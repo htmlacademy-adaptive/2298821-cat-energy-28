@@ -17,12 +17,24 @@
   min-width: 320px;
   min-height: 302px;
   background-image: url("../img/index-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: rgba(104, 183, 56, 1);
+}
+
+@media (min-resolution: 2dppx) {
+  min-width: 320px;
+  min-height: 302px;
+  background-image: url("../img/index-background@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .programs__can-image {
   position: absolute;
-  top: 261px;
+  top: 232px;
+  left: 20px;
+  right: 20px;
 }
 
 .programs__headline {
@@ -66,6 +78,8 @@
   color: rgba(255, 255, 255, 1);
 
   margin-top: 138px;
+
+  position: relative;
 }
 
 .programs__list {
@@ -179,7 +193,6 @@
 
   .programs__header-wrap {
     position: relative;
-
     background-image: none;
     background-color: rgba(255, 255, 255, 1);
   }
@@ -329,6 +342,31 @@
     padding: 0 110px;
   }
 
+  .programs::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+
+    min-width: 720px;
+    min-height: 694px;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-size: contain;
+    background-position: top right;
+
+    z-index: 3;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .programs::before {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+
+  .programs__header-wrap {
+    background-color: transparent;
+  }
+
   .programs__headline {
     color: rgba(0, 0, 0, 1);
     text-align: left;
@@ -359,6 +397,8 @@
 
     width: 552px;
     height: 499px;
+
+    z-index: 6;
   }
 
   .programs__main-button {
@@ -379,7 +419,7 @@
   }
 
   .programs__items-container {
-    margin-top: 82px;
+    margin-top: 373px;
   }
 
   .programs__item {
