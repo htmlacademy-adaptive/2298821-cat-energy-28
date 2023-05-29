@@ -29,6 +29,10 @@
   height: 60px;
 }
 
+.adv-breaker {
+  display: none;
+}
+
 .advantages__item:last-child {
   margin-bottom: 0;
 }
@@ -68,26 +72,27 @@
   .secondary-description();
 
   margin: 0;
+  padding-bottom: 4px;
 }
 
 .advantages__item-number {
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .advantages {
     padding: 0 30px;
+
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
   }
 
   .advantages__container {
     background: rgba(255, 255, 255, 1);
     margin: 45px 0 0 0;
-
-    border-bottom: 1px solid rgba(230, 230, 230, 1);
   }
 
   .advantages__title {
-    margin-bottom: 32px;
+    margin-bottom: 72px;
 
     font-size: 60px;
     line-height: 60px;
@@ -98,7 +103,8 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    margin: 0 0 47px 0;
+    margin: 0;
+    margin-bottom: 5px;
     padding: 0;
   }
 
@@ -113,10 +119,14 @@
     margin-bottom: 0;
   }
 
+  .adv-breaker {
+    display: inline;
+  }
+
   .advantages__item--leaf {
     min-width: 230px;
 
-    margin-right: 137px;
+    margin-right: 127px;
   }
 
   .advantages__item--powder {
@@ -125,7 +135,7 @@
 
   .advantages__item--food {
     min-width: 247px;
-    margin-right: 137px;
+    margin-right: 127px;
   }
 
   .advantages__item--clock {
@@ -152,11 +162,15 @@
     z-index: 4;
   }
 
+  .advantages__description--clock {
+    width: 245px;
+  }
+
   .advantages__item-number {
     display: block;
     margin: 0;
 
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 280px;
     line-height: 280px;
@@ -174,17 +188,18 @@
 @media (min-width: 1440px) {
   .advantages {
     padding: 0 110px;
+    border: 0;
   }
 
   .advantages__container {
     background: rgba(255, 255, 255, 1);
-    margin: 71px 0 69px 0;
+    margin: 66px 0 27px 0;
 
     border-bottom: 0;
   }
 
   .advantages__title {
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 
   .advantages__list {
@@ -203,7 +218,7 @@
   }
 
   .advantages__item--leaf {
-    margin-right: 94px;
+    margin-right: 85px;
   }
 
   .advantages__item--powder {

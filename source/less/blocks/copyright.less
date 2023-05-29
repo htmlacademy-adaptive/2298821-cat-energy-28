@@ -1,8 +1,27 @@
 .copyright__text {
   margin: 0 141px 0 0;
+  text-decoration: none;
+  color: rgba(68, 68, 68, 1);
 }
 
-@media (min-width: 769px) {
+.copyright__text:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.copyright__link svg {
+  fill: rgba(102, 102, 102, 1);
+}
+
+.copyright__link svg:hover,
+.copyright__link svg:focus {
+  fill: rgba(104, 183, 56, 1);
+}
+
+.copyright__link svg:active {
+  fill: rgba(104, 183, 56, 0.3);
+}
+
+@media (min-width: 768px) {
   .copyright__text {
     margin: 0 27.64px 0 0;
   }

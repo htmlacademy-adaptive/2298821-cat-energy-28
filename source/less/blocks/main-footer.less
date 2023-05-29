@@ -12,9 +12,17 @@
 }
 
 .main-footer__logo {
-  padding: 40px 0;
+  padding: 40px 0 35px 0;
 
   position: relative;
+}
+
+.main-footer__logo:hover {
+  opacity: 80%;
+}
+
+.main-footer__logo:active {
+  opacity: 60%;
 }
 
 .main-footer__logo::after {
@@ -51,7 +59,7 @@
   color: rgba(68, 68, 68, 1);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .main-footer__wrapper {
     display: flex;
     flex-direction: row;
@@ -63,6 +71,7 @@
 
   .main-footer__logo {
     padding: 0;
+    padding-top: 5.4px;
   }
 
   .main-footer__logo::after {
@@ -79,6 +88,7 @@
 
   .main-footer__copyright {
     padding: 0;
+    padding-top: 2px;
   }
 }
 
