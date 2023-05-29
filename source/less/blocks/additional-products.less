@@ -1,13 +1,33 @@
 .additional-products__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
   color: rgba(0, 0, 0, 1);
 
-  padding: 25px 74px 49px 20px;
+  padding: 19px 74px 36px 20px;
   margin: 0;
+
+  overflow: hidden;
+}
+
+.additional-products__title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.additional-products__title::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(104, 183, 56, 1);
+  position: relative;
+
+  margin-right: -100%;
+  right: -21px;
 }
 
 .additional-products__list {
@@ -30,12 +50,16 @@
   border-bottom: 0.5px solid rgba(205, 205, 205, 1);
 }
 
+.additional-products__item:nth-child(2n) {
+  padding-top: 11px;
+}
+
 .additional-products__item:last-child {
   margin-bottom: 0;
 }
 
 .additional-products__item-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -51,13 +75,18 @@
   flex-direction: row;
   justify-content: space-between;
 
+  margin-bottom: 0;
+}
+
+.additional-products__item-details p {
+  margin-top: 13px;
   margin-bottom: 15px;
 }
 
 .additional-products__item-description {
   color: rgba(68, 68, 68, 1);
 
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -68,7 +97,7 @@
   height: 40px;
   border: 0;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -76,13 +105,39 @@
   text-align: center;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .additional-products__title {
     margin: 0;
-    padding: 68px 0 80px 67px;
+    padding: 60px 0 76px 67px;
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .additional-products__title span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .additional-products__title::before,
+  .additional-products__title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(104, 183, 56, 1);
+    position: relative;
+  }
+
+  .additional-products__title::before {
+    margin-left: -100%;
+    left: -37px;
+  }
+
+  .additional-products__title::after {
+    margin-right: -100%;
+    right: -36px;
   }
 
   .additional-products__list {
@@ -99,6 +154,14 @@
     border: 0.5px solid rgba(205, 205, 205, 1);
   }
 
+  .additional-products__item:nth-child(2n) {
+    padding: 26px 38px 25px 38px;
+  }
+
+  .additional-products__item:nth-child(3n) {
+    padding-bottom: 25px;
+  }
+
   .additional-products__item-wrap {
     display: flex;
     flex-direction: column;
@@ -108,27 +171,39 @@
   .additional-products__item-wrap__desktop {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 
-    margin-bottom: 23px;
-
     min-width: 632px;
+    min-height: 20px;
+
+    margin-bottom: 25px;
   }
 
   .additional-products__item-title {
-    margin-right: 244px;
+    margin-right: 210px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .additional-products__item:nth-child(2n) .additional-products__item-title {
+    margin-right: 234px;
   }
 
   .additional-products__item-details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 
     margin: 0;
+    padding-top: 2px;
+  }
+
+  .additional-products__item-details p {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .additional-products__item-description {
@@ -140,6 +215,8 @@
 
   .amount-description {
     margin-right: 49px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .additional-products__button {
@@ -149,11 +226,41 @@
 }
 
 @media (min-width: 1440px) {
+  .additional-products {
+    z-index: 20;
+  }
+
   .additional-products__title {
     margin: 0;
-    padding: 76px 0 81px 110px;
+    padding: 64px 0 81px 110px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .additional-products__title span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .additional-products__title::before,
+  .additional-products__title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(104, 183, 56, 1);
+    position: relative;
+  }
+
+  .additional-products__title::before {
+    margin-left: -100%;
+    left: -40px;
+  }
+
+  .additional-products__title::after {
+    margin-right: -100%;
+    right: -35px;
   }
 
   .additional-products__list {
@@ -168,7 +275,7 @@
     padding: 15px 0 17px 0;
 
     min-height: 40px;
-    min-width: 894px;
+    width: 894px;
 
     border-top: 0.5px solid rgba(205, 205, 205, 1);
     border-bottom: 0.5px solid rgba(205, 205, 205, 1);
@@ -185,42 +292,69 @@
 
   .additional-products__item-wrap__desktop {
     margin-bottom: 0;
+    justify-content: unset;
   }
 
-  .additional-products__item-title {
-    margin-right: 0;
+  .additional-products__item-title:nth-child(1n) {
+    margin-right: 164px;
+  }
+
+  .additional-products__item:nth-child(2n) {
+    padding: 15px 0 17px 0;
+  }
+
+  .additional-products__item-title:nth-child(2n) {
+    margin-right: 195px;
+  }
+
+  .additional-products__item:nth-child(2n) .additional-products__item-title {
+    margin-right: 195px;
+  }
+
+  .additional-products__item-title:nth-child(3n) {
+    margin-right: 256px;
+    padding-bottom: 17px;
+  }
+
+  .additional-products__item:nth-child(4n) {
+    padding: 15px 0 17px 0;
+  }
+
+  .additional-products__item:nth-child(3n) {
+    padding-bottom: 17px;
+  }
+
+  .additional-products__item:nth-child(3n) .additional-products__item-title {
+    margin-right: 256px;
+  }
+
+  .additional-products__item-title:nth-child(4n) {
+    margin-right: 235px;
+  }
+
+  .additional-products__item:nth-child(4n) .additional-products__item-title {
+    margin-right: 235px;
   }
 
   .additional-products__item-details {
     text-align: left;
+    width: 285px;
+
+    align-items: center;
   }
 
-  .amount-description--sweetener {
-    width: 131px;
-    margin-left: 164px;
-    margin-right: 112px;
+  .amount-description {
+    margin-right: 0;
   }
 
-  .amount-description--water {
-    width: 66px;
-    margin-left: 195px;
-    margin-right: 170px;
-  }
-
-  .amount-description--milk {
-    width: 49px;
-    margin-left: 245px;
-    margin-right: 190px;
-  }
-
-  .amount-description--vitamins {
-    width: 122px;
-    margin-left: 230px;
-    margin-right: 115px;
+  .add-item-description-deskwrap {
+    padding-right: 10px;
   }
 
   .additional-products__button {
     width: 244px;
     border: 0;
+
+    margin-left: 20px;
   }
 }

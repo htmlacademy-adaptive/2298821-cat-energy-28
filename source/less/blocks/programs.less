@@ -26,6 +26,7 @@
   min-width: 320px;
   min-height: 302px;
   background-image: url("../img/index-background@2x.jpg");
+  background-color: rgba(104, 183, 56, 1);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -41,7 +42,7 @@
   color: rgba(255, 255, 255, 1);
   text-align: center;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -51,8 +52,12 @@
   padding-top: 27px;
 }
 
+.programs-headline-breaker {
+  display: none;
+}
+
 .programs__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -68,7 +73,7 @@
   height: 40px;
   border: 0;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -92,9 +97,15 @@
   background-color: rgba(234, 234, 234, 1);
 
   min-width: 240px;
-  min-height: 246px;
   margin: 20px 0;
-  padding: 20px;
+}
+
+.programs__item--slim {
+  padding: 21px 20px 18px 20px;
+}
+
+.programs__item--pro {
+  padding: 24px 20px 18px 13px;
 }
 
 .programs__item:last-child {
@@ -108,7 +119,7 @@
 }
 
 .programs__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -121,24 +132,29 @@
 }
 
 .programs__title--slim {
-  margin-left: 19px;
+  margin-left: 22px;
 }
 
 .programs__title--pro {
-  margin-left: 11px;
+  margin-left: 10px;
 }
 
 .programs__description {
   position: relative;
   color: rgba(68, 68, 68, 1);
 
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
 
-  margin: 22px 0 38px 0;
+  margin: 20px 0 38px 0;
+}
+
+.programs__description--pro {
+  padding-left: 7px;
+  margin-bottom: 42px;
 }
 
 .programs__description::after {
@@ -148,13 +164,22 @@
   content: url("../img/programs-item-divider.png");
 }
 
+.programs__item-slim-imgwrap {
+  padding-left: 2px;
+}
+
+.programs__item-pro-imgwrap {
+  padding-top: 2px;
+}
+
 .programs__button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-align: left;
   text-transform: uppercase;
+  text-decoration: none;
   color: rgba(0, 0, 0, 1);
   background-color: transparent;
 
@@ -168,6 +193,12 @@
   position: relative;
 }
 
+.programs__button:active,
+.programs__button--slim:active::after,
+.programs__button--pro:active::after {
+  opacity: 30%;
+}
+
 .programs__button--slim::after {
   position: absolute;
   content: url("../img/programs-item-pointer.svg");
@@ -175,18 +206,22 @@
   top: 5px;
 }
 
+.programs__button--pro {
+  padding-left: 7px;
+}
+
 .programs__button--pro::after {
   position: absolute;
   content: url("../img/programs-item-pointer.svg");
-  left: 98px;
-  top: 5px;
+  left: 104px;
+  top: 2px;
 }
 
 .programs__desktop-header-image {
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .programs {
     padding: 0 30px;
   }
@@ -208,24 +243,28 @@
   .programs__headline {
     color: rgba(0, 0, 0, 1);
 
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
     text-align: left;
 
-    padding: 62px 0 41px 88px;
+    padding: 52px 200px 41px 88px;
+  }
+
+  .programs-headline-breaker {
+    display: inline;
   }
 
   .programs__slogan {
     color: rgba(0, 0, 0, 1);
 
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
 
-    padding: 0 336px 0 90px;
+    padding: 0 0 0 90px;
   }
 
   .programs__main-button {
@@ -248,7 +287,7 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 526px;
+    margin-top: 556px;
   }
 
   .programs__item {
@@ -273,19 +312,13 @@
   .programs__icon--slim {
     position: absolute;
     top: 81px;
-    right: 91.93px;
-
-    width: 140px;
-    height: 194px;
+    right: 62px;
   }
 
   .programs__icon--pro {
     position: absolute;
-    top: 135px;
+    top: 91px;
     right: 28px;
-
-    width: 268px;
-    height: 112px;
   }
 
   .programs__title {
@@ -295,13 +328,17 @@
     line-height: 36px;
   }
 
+  .programs__title--pro {
+    padding-left: 5px;
+  }
+
   .programs__description {
     font-size: 16px;
     line-height: 24px;
     text-align: left;
 
     width: 340px;
-    margin: 24px 316px 48px 0;
+    margin: 24px 316px 53px 0;
   }
 
   .programs__description::after {
@@ -318,18 +355,22 @@
     position: relative;
   }
 
+  .programs__button--slim {
+    padding-top: 8px;
+  }
+
   .programs__button--slim::after {
     position: absolute;
     content: url("../img/programs-item-pointer.svg");
     left: 133px;
-    top: 0;
+    top: 5px;
   }
 
   .programs__button--pro::after {
     position: absolute;
     content: url("../img/programs-item-pointer.svg");
-    left: 129px;
-    top: 0;
+    left: 132px;
+    top: -2px;
   }
 
   .programs__desktop-header-image {
@@ -351,6 +392,7 @@
     min-width: 720px;
     min-height: 694px;
     background-image: url("../img/index-background-desktop.jpg");
+    background-color: rgba(104, 183, 56, 1);
     background-size: contain;
     background-position: top right;
 
@@ -360,6 +402,7 @@
   @media (min-resolution: 2dppx) {
     .programs::before {
       background-image: url("../img/index-background-desktop@2x.jpg");
+      background-color: rgba(104, 183, 56, 1);
     }
   }
 
@@ -376,18 +419,18 @@
     font-weight: 400;
     line-height: 60px;
 
-    padding: 111px 700px 40px 80px;
+    padding: 88px 700px 40px 50px;
   }
 
   .programs__slogan {
     color: rgba(0, 0, 0, 1);
 
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
 
-    padding: 0 auto 0 160px;
+    padding: 0 0 0 50px;
   }
 
   .programs__can-image {
@@ -419,7 +462,7 @@
   }
 
   .programs__items-container {
-    margin-top: 373px;
+    margin-top: 353px;
   }
 
   .programs__item {
@@ -428,19 +471,23 @@
     margin: 0;
   }
 
+  .programs__title {
+    padding-bottom: 3px;
+  }
+
   .programs__item--slim {
-    padding: 41px 0 55px 52px;
+    padding: 28px 0 55px 52px;
   }
 
   .programs__item--pro {
-    padding: 47px 0 55px 52px;
+    padding: 33px 0 55px 33px;
   }
 
   .programs__item-wrap {
     display: flex;
     flex-direction: row;
 
-    margin-bottom: 39px;
+    margin-bottom: 30px;
   }
 
   .programs__icon {
@@ -448,16 +495,10 @@
   }
 
   .programs__icon--slim {
-    width: 70px;
-    height: 97px;
-
-    margin-right: 77px;
+    margin-right: 62px;
   }
 
   .programs__icon--pro {
-    width: 134px;
-    height: 56px;
-
     margin-right: 47px;
   }
 
@@ -469,5 +510,27 @@
     width: 457px;
 
     margin: 0 0 23px 0;
+  }
+
+  .programs__description--pro {
+    padding-left: 19px;
+    margin-bottom: 26px;
+  }
+
+  .programs__title--pro {
+    padding-left: 0;
+  }
+
+  .programs__button--pro {
+    padding-left: 19px;
+
+    position: relative;
+  }
+
+  .programs__button--pro::after {
+    position: absolute;
+    content: url("../img/programs-item-pointer.svg");
+    left: 142px;
+    top: -2px;
   }
 }
