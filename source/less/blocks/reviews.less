@@ -193,12 +193,12 @@
   border-color: transparent transparent transparent rgba(102, 102, 102, 1);
 }
 
-.reviews__divider-button:hover:before,
+.reviews__divider-button:hover::before,
 .reviews__divider-button:hover::after {
   border-color: transparent transparent transparent rgba(104, 183, 56, 1);
 }
 
-.reviews__divider-button:active:before,
+.reviews__divider-button:active::before,
 .reviews__divider-button:active::after {
   border-color: transparent transparent transparent rgba(94, 170, 47, 1);
 }
@@ -228,11 +228,6 @@
     content: url("../img/review-cat-background.png");
     top: 620px;
     left: 0;
-  }
-
-  .reviews__title {
-    font-size: 60px;
-    line-height: 60px;
   }
 
   .reviews__slider {
@@ -323,7 +318,6 @@
     text-align: right;
 
     padding-top: 0;
-    margin-bottom: 0;
     margin: 0;
 
     display: flex;
@@ -341,6 +335,9 @@
   .reviews__title {
     margin-top: 0;
     margin-bottom: 63px;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .reviews__description {

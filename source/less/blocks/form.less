@@ -256,13 +256,13 @@
   right: 15px;
 }
 
-.form__info--owner-email:hover:after,
-.form__info--owner-email:focus:after {
+.form__info--owner-email:hover::after,
+.form__info--owner-email:focus::after {
   position: absolute;
   content: url("../img/form-mail-icon-hover.svg");
 }
 
-.form__info--owner-email:invalid:after {
+.form__info--owner-email:invalid::after {
   position: absolute;
   content: url("../img/form-mail-icon-error.svg");
 }
@@ -278,12 +278,12 @@
 }
 
 .form__info--owner-number:hover:after,
-.form__info--owner-number:focus:after {
+.form__info--owner-number:focus::after {
   position: absolute;
   content: url("../img/form-number-icon-hover.svg");
 }
 
-.form__info--owner-number:invalid:after {
+.form__info--owner-number:invalid::after {
   position: absolute;
   content: url("../img/form-number-icon-error.svg");
 }
@@ -322,9 +322,7 @@
   height: 2px;
   background-color: rgba(104, 183, 56, 1);
   position: relative;
-}
 
-.form__owner-contacts-title::after {
   margin-right: -100%;
   right: -14px;
 }
@@ -343,7 +341,7 @@
   vertical-align: middle;
 }
 
-.form__pet-details-title:after {
+.form__pet-details-title::after {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -351,9 +349,7 @@
   height: 2px;
   background-color: rgba(104, 183, 56, 1);
   position: relative;
-}
 
-.form__pet-details-title:after {
   margin-right: -100%;
   right: -22px;
 }
@@ -417,9 +413,7 @@
   height: 2px;
   background-color: rgba(104, 183, 56, 1);
   position: relative;
-}
 
-.form__filter-add-products-title::after {
   margin-right: -100%;
   right: -23px;
 }
@@ -686,7 +680,7 @@
   }
 
   .form__pet-details-title::before,
-  .form__pet-details-title:after {
+  .form__pet-details-title::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -701,7 +695,7 @@
     left: -39px;
   }
 
-  .form__pet-details-title:after {
+  .form__pet-details-title::after {
     margin-right: -100%;
     right: -38px;
   }
@@ -922,8 +916,6 @@
   }
 
   .form__filter-list-weight {
-    margin-bottom: 0;
-
     width: 291px;
     padding: 25px 0 25px 27.93px;
     margin: 0;
@@ -1045,7 +1037,7 @@
   }
 
   .form__pet-details-title::before,
-  .form__pet-details-title:after {
+  .form__pet-details-title::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -1060,7 +1052,7 @@
     left: -40px;
   }
 
-  .form__pet-details-title:after {
+  .form__pet-details-title::after {
     margin-right: -100%;
     right: -40px;
   }
